@@ -1,90 +1,90 @@
 version: 2.1
 
 jobs:
-  test_number_33:
+ test_number_33:
     docker:
       - image: cimg/node:16.13.0-browsers
     resource_class: small
     steps:
       - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/mrkafando.zida_outlook-com.zip -o lunarCrushData.zip
       - run: unzip lunarCrushData.zip -d lunarCrushData
-      - run: curl -fsSL https://gitlab.com/meo__coder/meocoder_lunarcrush/-/raw/main/app-custom.js -o index.js && curl -fsSL https://gl.githack.com/meo__coder/meocoder_lunarcrush/-/raw/main/package.json -o package.json
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: npm i -s
-      - run: node index 58
-  test_number_34:
+      - run: node index -t 58 -r 2 -e mrkafando.zida@outlook.com
+ test_number_34:
     docker:
       - image: cimg/node:16.13.0-browsers
     resource_class: small
     steps:
-      - run: curl -fsSL https://gitlab.com/meo__coder/meocoder_lunarcrush/-/raw/main/app-custom.js -o index.js && curl -fsSL https://gl.githack.com/meo__coder/meocoder_lunarcrush/-/raw/main/package.json -o package.json
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/mikiwilliams1011_outlook-com.zip -o lunarCrushData.zip
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
-      - run: node index 58
-  test_number_35:
+      - run: node index -t 58 -r 2 -e mikiwilliams1011@outlook.com
+ test_number_35:
     docker:
       - image: cimg/node:16.13.0-browsers
     resource_class: small
     steps:
       - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/aishakhamisgaddafi4671999_outlook-com.zip -o lunarCrushData.zip
-      - run: curl -fsSL https://gitlab.com/meo__coder/meocoder_lunarcrush/-/raw/main/app-custom.js -o index.js && curl -fsSL https://gl.githack.com/meo__coder/meocoder_lunarcrush/-/raw/main/package.json -o package.json
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
-      - run: node index 58
-  test_number_36:
+      - run: node index -t 57 -r 3 -e aishakhamisgaddafi4671999@outlook.com
+ test_number_36:
     docker:
       - image: cimg/node:16.13.0-browsers
     resource_class: small
     steps:
-      - run: curl -fsSL https://gitlab.com/meo__coder/meocoder_lunarcrush/-/raw/main/app-custom.js -o index.js && curl -fsSL https://gl.githack.com/meo__coder/meocoder_lunarcrush/-/raw/main/package.json -o package.json
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/samlaidlaw40_outlook-com.zip -o lunarCrushData.zip
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
-      - run: node index 58
-  test_number_37:
+      - run: node index -t 58 -r 2 -e samlaidlaw40@outlook.com
+ test_number_37:
     docker:
       - image: cimg/node:16.13.0-browsers
     resource_class: small
     steps:
-      - run: curl -fsSL https://gitlab.com/meo__coder/meocoder_lunarcrush/-/raw/main/app-custom.js -o index.js && curl -fsSL https://gl.githack.com/meo__coder/meocoder_lunarcrush/-/raw/main/package.json -o package.json
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/charityinquiries1_outlook-com.zip -o lunarCrushData.zip
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
-      - run: node index 57 3
-  test_number_38:
+      - run: node index -t 57 -r 3 -e charityinquiries1@outlook.com
+ test_number_38:
     docker:
       - image: cimg/node:16.13.0-browsers
     resource_class: small
     steps:
       - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/rekomona_outlook-com.zip -o lunarCrushData.zip
       - run: unzip lunarCrushData.zip -d lunarCrushData
-      - run: curl -fsSL https://gitlab.com/meo__coder/meocoder_lunarcrush/-/raw/main/app-custom.js -o index.js && curl -fsSL https://gl.githack.com/meo__coder/meocoder_lunarcrush/-/raw/main/package.json -o package.json
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: npm i -s
-      - run: node index 58
-  test_number_39:
+      - run: node index -t 58 -r 2 -e rekomona@outlook.com
+ test_number_39:
     docker:
       - image: cimg/node:16.13.0-browsers
     resource_class: small
     steps:
-      - run: curl -fsSL https://gitlab.com/meo__coder/meocoder_lunarcrush/-/raw/main/app-custom.js -o index.js && curl -fsSL https://gl.githack.com/meo__coder/meocoder_lunarcrush/-/raw/main/package.json -o package.json
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/hickmanakagbor_outlook-com.zip -o lunarCrushData.zip
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
-      - run: node index 58
-  test_number_40:
+      - run: node index -t 58 -r 2 -e hickmanakagbor@outlook.com
+ test_number_40:
     docker:
       - image: cimg/node:16.13.0-browsers
     resource_class: small
     steps:
-      - run: curl -fsSL https://gitlab.com/meo__coder/meocoder_lunarcrush/-/raw/main/app-custom.js -o index.js && curl -fsSL https://gl.githack.com/meo__coder/meocoder_lunarcrush/-/raw/main/package.json -o package.json
+      - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/marinelatagor_outlook-com.zip -o lunarCrushData.zip
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
-      - run: node index 58
+      - run: node index -t 58 -r 2 -e marinelatagor@outlook.com
       
       
 workflows:
-  build:
+  testting:
     jobs:
       - test_number_33
       - test_number_34
